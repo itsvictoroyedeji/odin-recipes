@@ -1,19 +1,88 @@
-@media screen and (max-width: 480px) {
-  img {max-width: 100%;}
+html {
+  box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif, sans-serif;
   font-size: 16px;
-}
-
-mark {
-  background-color: #3bff5c
+  background-color: #eee
 }
 
 h1, h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
-  font-size: 40px;
+div.home-content {
+  text-align: center;
+  width: 700px;
+  height: auto;
+  margin: 24px auto;
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid green;
+}
+
+div.title {
+  text-align: center;
+  background-color: #fff;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+}
+
+.title h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+ul.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  margin: 8px 8px 32px;
+}
+
+.recipe-list li a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid blue;
+  color: black;
+  background-color: rgb(172, 252, 234);
+  padding: 8px 18px;
+  margin: 8px;
+}
+
+.recipe-list li a:hover {
+  background-color: green;
+  border-color: green;
+  color: white;
+}
+
+
+/* VIEWPORT settings */
+
+@media screen and (max-width: 700px) {
+  div.home-content {
+    margin: 24px auto;
+    width: 90%
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {max-width: 100%;}
 }
