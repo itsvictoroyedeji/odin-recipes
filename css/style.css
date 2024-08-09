@@ -16,16 +16,19 @@ html, body {
 body {
   font-family: Arial, Helvetica, sans-serif, sans-serif;
   font-size: 16px;
-  background-color: #eee
+  background-color: #eee;
+  padding-bottom: 1em;
+  line-height: 1.4;
 }
 
 h1, h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
-div.home-content {
+div.home-container {
   text-align: center;
-  width: 700px;
+  max-width: 700px;
   height: auto;
   margin: 24px auto;
   background-color: #fff;
@@ -73,16 +76,56 @@ ul.recipe-list {
   color: white;
 }
 
+#title-container, #content-container, #recipe-img-container {
+  background-color: white;
+  max-width: 600px
+}
+
+#title-container {
+  padding: 1em;
+  margin: 2em auto 0;
+}
+
+#title-container h1 {
+  margin: .5em 0;
+}
+
+#recipe-img-container {
+  margin: 0 auto;
+}
+
+#recipe-img-container img {
+  max-width: 100%;
+}
+
+#content-container {
+  padding: 1em;
+  margin: 0 auto 1em;
+}
+
+.recipe-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.recipe-img img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 600px;
+  margin: 16px auto;
+}
+
+.end-menu {
+  text-align: center;
+}
+
 
 /* VIEWPORT settings */
 
-@media screen and (max-width: 700px) {
-  div.home-content {
-    margin: 24px auto;
-    width: 90%
+ @media screen and (max-width: 600px) {
+  #title-container {
+    margin: 0 auto;
   }
-}
-
-@media screen and (max-width: 480px) {
-  img {max-width: 100%;}
-}
+} 
