@@ -127,7 +127,11 @@ ul.recipe-list {
 
 /* VIEWPORT settings */
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 700px) {
+  div.home-container {
+    margin: 24px .8em;
+  }
+
   #title-container {
     margin: 0 auto;
   }
